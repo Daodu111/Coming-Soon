@@ -19,10 +19,12 @@ body {
     padding: 0;
     background: url('./images/bg-pattern-desktop.svg') no-repeat;
     height: 100vh;
+    background-size: cover;
 }
 
 .container {
     margin: auto 14em;
+    max-width: 1200px;
 }
 nav {
     margin-top: 3em;
@@ -102,9 +104,9 @@ button:hover {
     background-clip: padding-box, border-box; /* Clip background to border */
 }
 .error-icon {
-    position: relative;
-    left: 20em;
-    bottom: 3em;
+    position: absolute;
+    left: 18em;
+    bottom: 5.8em;
 }
 .hidden {
     display: none;
@@ -112,7 +114,8 @@ button:hover {
 .error-message {
     position: relative;
     font-size: 0.8rem;
-    left: -8em;
+    left: 1em;
+    bottom: 4em;
     width: 120px;
 }
 
@@ -276,14 +279,19 @@ button:hover {
         border-radius: 2em;
     }
     button {
+        position: relative;
+        width: 100%;
         width: 80px;
-        left: 16.5em;
+        left: 10em;
         bottom: 4em;
     }
     .error-icon {
         position: relative;
         left: 8em;
         bottom: 3em;
+    }
+    .error-message {
+        left: -5em;
     }
 }
 
